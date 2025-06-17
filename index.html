@@ -20,7 +20,6 @@
     />
   </head>
   <body>
-    <!-- <div class="wrapper"> -->
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -51,12 +50,17 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu-button">
+          <svg class="header-menu-icon" width="18" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="content">
       <!--Hero-->
       <section class="hero section">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
@@ -119,7 +123,7 @@
       </section>
       <!--Our Team-->
       <section class="team section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
@@ -306,6 +310,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port1.jpg 1x, ./images/port1@2x.jpg 2x"
                   src="./images/port1.jpg"
                   alt="Banking App"
                   width="360"
@@ -326,6 +331,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port2.jpg 1x, ./images/port2@2x.jpg 2x"
                   src="./images/port2.jpg"
                   alt="Phone App"
                   width="360"
@@ -346,6 +352,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port3.jpg 1x, ./images/port3@2x.jpg 2x"
                   src="./images/port3.jpg"
                   alt="Meditation App"
                   width="360"
@@ -366,6 +373,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port4.jpg 1x, ./images/port4@2x.jpg 2x"
                   src="./images/port4.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -386,6 +394,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port5.jpg 1x, ./images/port5@2x.jpg 2x"
                   src="./images/port5.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -406,6 +415,7 @@
               <div class="portfolio-hidden-unit">
                 <img
                   class="portfolio-list-image"
+                  srcset="./images/port6.jpg 1x, ./images/port6@2x.jpg 2x"
                   src="./images/port6.jpg"
                   alt="Online Courses"
                   width="360"
@@ -429,18 +439,13 @@
     <footer class="footer">
       <div class="footer-text-container container">
         <div class="footer-container">
-          <!--for better geometry add new div-->
-          <!--<div class="footer-text">-->
-          <!--<h2 class="footer-title">-->
           <a href="./index.html" class="footer-logo"
             >Web<span class="footer-logo-color">Studio</span></a
           >
-          <!--</h2>-->
           <p class="footer-item">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-          <!--</div>-->
         </div>
         <div class="footer-social-media">
           <p class="social-media-text">Social media</p>
@@ -496,10 +501,9 @@
         </div>
       </div>
     </footer>
-    <!-- </div> -->
     <!-- MODAL -->
-    <div class="modal-overlay is-open">
-      <div class="modal">
+    <div class="modal-overlay">
+      <!-- <div class="modal">
         <button type="button" class="close-button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
@@ -583,7 +587,7 @@
           </div>
           <button type="submit" class="submit-button">Send</button>
         </form>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
