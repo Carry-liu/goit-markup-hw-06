@@ -192,7 +192,8 @@ padding-left: 16px;
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 1px;
+  z-index: 99999px;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
    overflow: auto;
@@ -206,6 +207,7 @@ pointer-events: none;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  isolation: isolate;
 }
 
 .header-mob-close-button {
